@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row"  style="margin: 125px 125px 200px;">
+      <div class="col-xl-6 col-lg-6 col-md-6">
+        <img src="{% static '/images/kims.png' %}" alt="responsive webite" class="img-fluid">
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-6">
+        <p style="font-style: italic;">Welcome to</p>
+        <h1 style="color: #046bff; margin-bottom: 1rem; font-weight:bold;">KIMS Hospitals</h1>
+       
+        <p style="text-align: justify;">KIMS Hospitals is one of the largest corporate healthcare groups in India with
+            hospitals in Telangana, Andhra Pradesh, and Maharashtra, providing multi-disciplinary integrated
+            healthcare services, with a focus on tertiary and quaternary healthcare at an affordable cost. Our
+            network of 12 hospitals and 4000 beds is spread across Telangana (Secunderabad, Kondapur,
+            Gachibowli, and Paradise Circle), Andhra Pradesh (Nellore, Rajahmundry, Srikakulam, Ongole, Vizag,
+            Anantapur, and Kurnool) and Nagpur (Maharashtra). We offer a bouquet of comprehensive healthcare
+            services across 25 specialties including cardiac sciences, oncology, neurosciences, gastric
+            sciences, orthopedics, organ transplantation, renal sciences, and mother & child care.</p>
+      </div>
+    </div>
+  </div>
+  
+{% endblock %}

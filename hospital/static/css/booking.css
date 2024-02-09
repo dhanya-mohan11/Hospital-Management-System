@@ -1,0 +1,70 @@
+.wrap {
+    margin: 30px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+}
+
+.form-header {
+    background-color: #046bff;
+    border-radius: 4px 4px 0 0;
+    padding: 1em;
+    margin-top: 10px;
+}
+
+.form-header h2 {
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.75em;
+    margin: 0;
+}
+
+.form-body {
+    padding: 1em;
+    display: block;
+    width: 100%;
+}
+
+.form-footer {
+    background-color: #e2e2e2;
+    border-radius: 0 0 4px 4px;
+    padding: 1em;
+}
+
+.form-footer {
+    padding: 1em 12em;
+}
+
+.confirm-button {
+    width: 200px;
+    height: 60px;
+    box-shadow: none;
+    background-color: #046bff;
+    color: #fff;
+    border-radius: 10px;
+}
+
+/* .message{
+    width: 100%;
+    position: relative;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    color: #046bff;
+} */
+
+/* .message .success{
+    font-size: 20px;
+    color: #046bff;
+    position: absolute;
+    animation: buttons .3s linear;
+    display: none;
+}
+.message .danger{
+    font-size: 20px;
+    color: red;
+    position: absolute;
+    animation: buttons .3s linear;
+    display: none;
+} */

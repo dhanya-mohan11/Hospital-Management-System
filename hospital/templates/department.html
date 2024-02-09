@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %} Department {% endblock %}
+
+<!-- {% load static %} -->
+
+{% block content %}
+
+<h2 class="mb-4 display-5 text-center" style="font-weight:bold; margin-top: 30px; color: #046bff;">Departments</h2>
+<br>
+{% for i in dept %}
+
+<div style="text-align: center; margin-left: 250px; width: 70%; height: 250px; background-color:#097dae; border: 2px; border-radius: 25px; overflow:auto;">
+    <h1 style="color: white; padding-top: 20px;">{{i.name}}</h1>
+    <p style="color: white; padding: 15px 15px; text-align: justify;">{{i.desc}}</p>
+</div>
+<br>
+
+{% endfor %}
+
+{% endblock %}

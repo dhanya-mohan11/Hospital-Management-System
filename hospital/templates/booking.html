@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %} Booking {% endblock %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<div class="container mt-5 mb-5 d-flex justify-content-center">
+    <div class="wrap" style=" padding: 10px;">
+        <div class="form-header">
+            <h2>Book AN APPOINMENT</h2>
+        </div>
+        <br>
+        <div style="color: #046bff; text-align: center;">
+            {% for msg in messages %}
+                {{msg}}
+            {% endfor %}
+        </div>
+        <br>
+
+        <form action="" method="POST" class="">
+          
+            {% csrf_token %}
+            {{ form|crispy }}
+
+            <tr class="form-body">
+                <td class="fieldset"></td>
+                <br>
+                <td class="form-footer">
+                    <center><button onclick="message()" class="confirm-button">Book Now</button></center>
+                </td>
+            </tr>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
